@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Assesment App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Title">
+        <h1>Health Insurance Risk Calculator</h1>
+    </div>
+
+    <div id="Desc">
+        <p>This is a static website that will take in the data that the user enters and do calculations on the server side with the
+            information provided and send back your health risk factor.
+        </p>
+    </div>
+
+
+    <fieldset>
+        <legend>General Information</legend>
+    
+        <input type="text" placeholder="Age..." id="Name"><br /><br />
+        <input type="text" placeholder="Feet..." id="HeightFt">
+        <input type="text" placeholder="Inches..." id="HeightIn"><br /><br />
+        <div id="idHeightBtn">
+              <input type="radio" id="impOne" name="heightBtn" value="imperial" checked>
+              <label>Imperial</label>
+              <input type="radio" id="metOne" name="heightBtn" value="Metric">
+              <label>Metric</label><br>
+        </div>
+        <br>
+        <input type="text" placeholder="Weight..." id="Weight"><br /><br />
+        <div id="idWeightBtn">
+              <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked>
+              <label>Imperial</label>
+              <input type="radio" id="metTwo" name="weightBtn" value="Metric">
+              <label>Metric</label><br>
+        </div>
+        <br>
+    
+    </fieldset>
+
+    <div id="bloodImg">
+        <img src="blood-pressure-stages-slide.png" id="img" alt = "">
+    </div>
+
+</body>
+</html>

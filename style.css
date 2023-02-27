@@ -1,0 +1,19 @@
+#Title {
+    text-align: center;
+}
+
+#Desc {
+    text-align: center;
+}
+
+#bloodImg {
+    flex: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
