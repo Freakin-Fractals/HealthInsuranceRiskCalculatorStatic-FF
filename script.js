@@ -11,3 +11,19 @@ function grabNumbers() {
     console.log("Weight = " + weight + "lbs");
     
 }
+
+function rdMetFn() {
+    var rdbTwoHeight = document.getElementById("metOne");
+    if (rdbTwoHeight.checked == true) {
+        document.getElementById("HeightIn").style.display = "none";
+        document.getElementById("HeightFt").placeholder = "Cm..."  
+    }
+}
+
+function rdImpFn() {
+    var rdImpHeightIn = document.getElementById("impOne");
+    if (rdImpHeightIn.checked == true) {
+        document.getElementById("HeightIn").style.display = "";
+        document.getElementById("HeightFt").placeholder = "Feet..."
+    } 
+}
