@@ -7,7 +7,7 @@ function grabNumbers() {
     feet = document.getElementById("HeightFt").value;
     inches = document.getElementById("HeightIn").value;
     weight = document.getElementById("Weight").value;
-    BPstage = document.getElementById("bplst").value;
+    bpstage = document.getElementById("bplst").value;
 
     // Each family disease is worth the same value of 10 points
     // This will return the number of disease as 0-3
