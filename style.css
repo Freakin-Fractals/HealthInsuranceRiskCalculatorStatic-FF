@@ -17,3 +17,11 @@
     height: auto;
     width: auto\9; /* ie8 */
 }
+
+fieldset {
+    background-color:bisque;
+}
+
+body {
+    background-color:blanchedalmond;
+}
