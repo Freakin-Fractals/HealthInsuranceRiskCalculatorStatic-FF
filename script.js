@@ -1,4 +1,8 @@
-
+async function wakeup() {
+    const response = await fetch("https://healthappserver.azurewebsites.net/ping")
+    //If the console says pong, the server got the ping
+    console.log(await response.json())
+}
 
 function grabNumbers() {
     // Grab numbers from the text fields and pass them to the server
