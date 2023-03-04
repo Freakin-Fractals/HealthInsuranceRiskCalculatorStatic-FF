@@ -4,7 +4,7 @@ async function wakeup() {
     console.log(await response.json())
 }
 
-function grabNumbers() {
+async function sendData() {
     // Grab numbers from the text fields and pass them to the server
     // All point calculations are done outside of script.js
     // age, height(meters), weight(kg), bloodPressure, diseases
@@ -49,6 +49,15 @@ function grabNumbers() {
     // console.log("Weight : " + kg + "kg");
     // console.log("Blood Pressure Stage: " + bpstage)
     // console.log("Number of Family Diseases: " + numDiseases)
+
+
+    // First attempt at sending the data between sites, feel free to change anything
+    const data = { age, m, kg, bpstage, numDiseases};
+    const calcURL = "https://healthappserver.azurewebsites.net/calculation";
+    const response = await fetch(calcURL, data);
+    const res = await response.json();
+    console.log(res);
+
 }
 
 function rdMetFn() {
