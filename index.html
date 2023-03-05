@@ -34,11 +34,11 @@
               <label>Metric</label><br>
         </div>
         <br>
-        <input type="text" placeholder="Weight..." id="Weight"><br /><br />
+        <input type="text" placeholder="Pounds..." id="Weight"><br /><br />
         <div id="idWeightBtn">
-              <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked>
+              <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked onclick="rdImpFn2()">
               <label>Imperial</label>
-              <input type="radio" id="metTwo" name="weightBtn" value="Metric">
+              <input type="radio" id="metTwo" name="weightBtn" value="Metric" onclick="rdMetFn2()">
               <label>Metric</label><br>
         </div>
         <br> 
@@ -55,11 +55,11 @@
         <label for="bloodPressure">Choose a stage:</label>
 
         <select name="bp" id="bplst">
-          <option value="normal">Normal</option>
-          <option value="elevated">Elevated</option>
-          <option value="highBloodPressueOne">Hypertension Stage 1</option>
-          <option value="highBloodPressueTwo">Hypertension Stage 2</option>
-          <option value="crisis">Crisis (Seek Medical Attention)</option>
+          <option value="1">Normal</option>
+          <option value="2">Elevated</option>
+          <option value="3">Hypertension Stage 1</option>
+          <option value="4">Hypertension Stage 2</option>
+          <option value="5">Crisis (Seek Medical Attention)</option>
         </select>
 
         <p>Family Medical History:</p>

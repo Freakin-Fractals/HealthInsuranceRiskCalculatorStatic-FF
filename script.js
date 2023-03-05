@@ -65,7 +65,7 @@ function rdMetFn() {
     var rdbTwoHeight = document.getElementById("metOne");
     if (rdbTwoHeight.checked == true) {
         document.getElementById("HeightIn").style.display = "none";
-        document.getElementById("HeightFt").placeholder = "Cm..."  
+        document.getElementById("HeightFt").placeholder = "Centimeters..."  
     }
 }
 
@@ -74,5 +74,19 @@ function rdImpFn() {
     if (rdImpHeightIn.checked == true) {
         document.getElementById("HeightIn").style.display = "";
         document.getElementById("HeightFt").placeholder = "Feet..."
+    } 
+}
+
+function rdMetFn2() {
+    var rdbTwoHeight = document.getElementById("metTwo");
+    if (rdbTwoHeight.checked == true) {
+        document.getElementById("Weight").placeholder = "Kilograms...";
+    }
+}
+
+function rdImpFn2() {
+    var rdImpHeightIn = document.getElementById("impTwo");
+    if (rdImpHeightIn.checked == true) {
+        document.getElementById("Weight").placeholder = "Pounds..."
     } 
 }
