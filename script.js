@@ -54,7 +54,7 @@ async function sendData() {
     // First attempt at sending the data between sites, feel free to change anything
     const data = { age, m, kg, bpstage, numDiseases};
     const calcURL = "https://healthappserver.azurewebsites.net/calculation?age=" + 
-    age + "&height=" + m + "&weight="+kg+"&bp="+bp+"&diseases="+numDiseases; //this address will get the server the information
+    age + "&height=" + m + "&weight="+kg+"&blood="+bpstage+"&disease="+numDiseases; //this address will get the server the information
     const response = await fetch(calcURL, data);
     const res = await response.json();
     console.log(res);
