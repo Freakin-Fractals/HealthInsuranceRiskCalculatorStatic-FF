@@ -24,9 +24,9 @@
     <fieldset>
         <legend>General Information</legend>
     
-        <input type="text" placeholder="Age..." id="Age"><br /><br />
-        <input type="text" placeholder="Feet..." id="HeightFt">
-        <input type="text" placeholder="Inches..." id="HeightIn"><br /><br />
+        <input type="number" placeholder="Age..." id="Age"><br /><br />
+        <input type="number" placeholder="Feet..." id="HeightFt">
+        <input type="number" placeholder="Inches..." id="HeightIn"><br /><br />
         <div id="idHeightBtn">
               <input type="radio" id="impOne" name="heightBtn" value="imperial" checked onclick="rdImpFn()">
               <label>Imperial</label>
@@ -34,7 +34,7 @@
               <label>Metric</label><br>
         </div>
         <br>
-        <input type="text" placeholder="Pounds..." id="Weight"><br /><br />
+        <input type="number" placeholder="Pounds..." id="Weight"><br /><br />
         <div id="idWeightBtn">
               <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked onclick="rdImpFn2()">
               <label>Imperial</label>
@@ -52,7 +52,7 @@
         <legend>Medical History</legend>
         <p>Looking at the figure above, how would you assess your blood pressure:</p>
 
-        <label for="bloodPressure">Choose a stage:</label>
+        <label >Choose a stage:</label>
 
         <select name="bp" id="bplst">
           <option value="1">Normal</option>
