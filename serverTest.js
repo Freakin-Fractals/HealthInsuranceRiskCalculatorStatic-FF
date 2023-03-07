@@ -144,7 +144,7 @@ async function serverTest() {
     age + "&height=" + m + "&weight="+kg+"&blood="+bpstage+"&disease="+numDiseases;
     const response9 = await fetch(calcURL9, data9);
     const res9 = await response9.json();
-    if (res9.risk == 'Error: Cannot Calculate Risk' && res9.blood == 'Error: Invalid Family Disease Count'){
+    if (res9.risk == 'Error: Cannot Calculate Risk' && res9.dis == 'Error: Invalid Family Disease Count'){
         console.log("Test 9: "+ '\x1b[32m%s\x1b[0m', "Pass")
     } else {
         console.log("Test 9: "+ '\x1b[31m%s\x1b[0m', "Fail")
@@ -224,7 +224,7 @@ async function serverTest() {
     age + "&height=" + m + "&weight="+kg+"&blood="+bpstage+"&disease="+numDiseases;
     const response14 = await fetch(calcURL14, data14);
     const res14 = await response14.json();
-    if (res14.risk == 'Error: Cannot Calculate Risk' && res14.blood == 'Error: Invalid Family Disease Count'){
+    if (res14.risk == 'Error: Cannot Calculate Risk' && res14.dis == 'Error: Invalid Family Disease Count'){
         console.log("Test 14: "+ '\x1b[32m%s\x1b[0m', "Pass")
     } else {
         console.log("Test 14: "+ '\x1b[31m%s\x1b[0m', "Fail")
@@ -304,7 +304,7 @@ async function serverTest() {
     age + "&height=" + m + "&weight="+kg+"&blood="+bpstage+"&disease="+numDiseases;
     const response19 = await fetch(calcURL19, data19);
     const res19 = await response19.json();
-    if (res19.risk == 'Error: Cannot Calculate Risk' && res19.blood == 'Error: Invalid Family Disease Count'){
+    if (res19.risk == 'Error: Cannot Calculate Risk' && res19.dis == 'Error: Invalid Family Disease Count'){
         console.log("Test 19: "+ '\x1b[32m%s\x1b[0m', "Pass")
     } else {
         console.log("Test 19: "+ '\x1b[31m%s\x1b[0m', "Fail")
@@ -336,7 +336,7 @@ async function serverTest() {
     age + "&height=" + m + "&weight="+kg+"&blood="+bpstage+"&disease="+numDiseases;
     const response21 = await fetch(calcURL21, data21);
     const res21 = await response21.json();
-    if (res21.risk == 'Error: Cannot Calculate Risk' && res21.blood == 'Error: Invalid Family Disease Count'){
+    if (res21.risk == 'Error: Cannot Calculate Risk' && res21.dis == 'Error: Invalid Family Disease Count'){
         console.log("Test 21: "+ '\x1b[32m%s\x1b[0m', "Pass")
     } else {
         console.log("Test 21: "+ '\x1b[31m%s\x1b[0m', "Fail")
