@@ -61,6 +61,10 @@ async function sendData() {
     alert(res.risk);
     document.querySelector('#result').innerHTML = 'Result:\n' + res.risk;
 
+    if (res.risk == "Error: Cannot Calculate Risk") {
+        document.getElementById("results").style.backgroundColor = "red";
+    }
+
 }
 
 function rdMetFn() {
