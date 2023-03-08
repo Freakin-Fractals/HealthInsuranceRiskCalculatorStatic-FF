@@ -58,7 +58,8 @@ async function sendData() {
     const response = await fetch(calcURL, data);
     const res = await response.json();
     console.log(res);
-    alert(res.risk)
+    alert(res.risk);
+    document.querySelector('#result').innerHTML = 'Result:\n' + res.risk;
 
 }
 
@@ -91,3 +92,4 @@ function rdImpFn2() {
         document.getElementById("Weight").placeholder = "Pounds..."
     } 
 }
+

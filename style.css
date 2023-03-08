@@ -25,3 +25,18 @@ fieldset {
 body {
     background-color:blanchedalmond;
 }
+
+#box {
+    display: flex;
+}
+
+#form {
+    width: 100%;
+}
+
+#results {
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid black;
+}

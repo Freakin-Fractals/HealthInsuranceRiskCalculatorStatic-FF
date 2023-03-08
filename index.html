@@ -21,28 +21,36 @@
     </div>
 
 
-    <fieldset>
-        <legend>General Information</legend>
-    
-        <input type="number" placeholder="Age..." id="Age"><br /><br />
-        <input type="number" placeholder="Feet..." id="HeightFt">
-        <input type="number" placeholder="Inches..." id="HeightIn"><br /><br />
-        <div id="idHeightBtn">
-              <input type="radio" id="impOne" name="heightBtn" value="imperial" checked onclick="rdImpFn()">
-              <label>Imperial</label>
-              <input type="radio" id="metOne" name="heightBtn" value="Metric" onclick="rdMetFn()">
-              <label>Metric</label><br>
-        </div>
-        <br>
-        <input type="number" placeholder="Pounds..." id="Weight"><br /><br />
-        <div id="idWeightBtn">
-              <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked onclick="rdImpFn2()">
-              <label>Imperial</label>
-              <input type="radio" id="metTwo" name="weightBtn" value="Metric" onclick="rdMetFn2()">
-              <label>Metric</label><br>
-        </div>
-        <br> 
-    </fieldset>
+<div id="box">
+    <div id="form">
+        <fieldset>
+            <legend>General Information</legend>
+        
+            <input type="number" placeholder="Age..." id="Age"><br /><br />
+            <input type="number" placeholder="Feet..." id="HeightFt">
+            <input type="number" placeholder="Inches..." id="HeightIn"><br /><br />
+            <div id="idHeightBtn">
+                  <input type="radio" id="impOne" name="heightBtn" value="imperial" checked onclick="rdImpFn()">
+                  <label>Imperial</label>
+                  <input type="radio" id="metOne" name="heightBtn" value="Metric" onclick="rdMetFn()">
+                  <label>Metric</label><br>
+            </div>
+            <br>
+            <input type="number" placeholder="Pounds..." id="Weight"><br /><br />
+            <div id="idWeightBtn">
+                  <input type="radio" id="impTwo" name="weightBtn" value="imperial" checked onclick="rdImpFn2()">
+                  <label>Imperial</label>
+                  <input type="radio" id="metTwo" name="weightBtn" value="Metric" onclick="rdMetFn2()">
+                  <label>Metric</label><br>
+            </div>
+            <br> 
+        </fieldset>
+    </div>
+
+    <div id="results">
+        <h1 id="result">Results: </h1>
+    </div>
+</div>
 
     <div id="bloodImg">
         <img src="blood-pressure-stages-slide.png" id="img" alt = "">
