@@ -20,6 +20,8 @@
 
 fieldset {
     background-color:bisque;
+    flex: auto;
+    height: 100%;
 }
 
 body {
@@ -36,7 +38,9 @@ body {
 
 #results {
     width: 100%;
+}
+
+#result {
     text-align: center;
-    background-color: white;
-    border: 1px solid black;
+    font-size: 60px;
 }
