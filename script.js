@@ -59,10 +59,20 @@ async function sendData() {
     const res = await response.json();
     console.log(res);
     alert(res.risk);
-    document.querySelector('#result').innerHTML = 'Result:\n' + res.risk;
+    document.querySelector('#result').innerHTML = 'Result: ' + res.risk;
 
     if (res.risk == "Error: Cannot Calculate Risk") {
         document.getElementById("results").style.backgroundColor = "red";
+    } else if (res.risk == "uninsurable") {
+        document.getElementById("results").style.backgroundColor = "red";
+    } else if (res.risk == "high risk") {
+        document.getElementById("results").style.backgroundColor = "orange";
+    }else if (res.risk == "moderate risk") {
+        document.getElementById("results").style.backgroundColor = "yellow";
+    } else if (res.risk == "low risk") {
+        document.getElementById("results").style.backgroundColor = "#90EE90";
+    } else {
+        document.getElementById("results").style.backgroundColor = "white";
     }
 
 }
