@@ -94,19 +94,39 @@ async function sendData() {
     }
 
     if (document.getElementById("metTwo").checked == true){
-        if ((document.getElementById("Weight").value > 142.882) || (document.getElementById("Weight").value < 0)) {
+        if ((document.getElementById("Weight").value > 142.882) || (document.getElementById("Weight").value < 0) || (document.getElementById("Weight").value == "")) {
             document.getElementById("Weight").style.backgroundColor = "#FFCCCB";
         } else {
             document.getElementById("Weight").style.backgroundColor = "white";
         }
     }
     else{
-        if ((document.getElementById("Weight").value > 315) || (document.getElementById("Weight").value < 0)) {
+        if ((document.getElementById("Weight").value > 315) || (document.getElementById("Weight").value < 0) || (document.getElementById("Weight").value == "")) {
             document.getElementById("Weight").style.backgroundColor = "#FFCCCB";
         } else {
             document.getElementById("Weight").style.backgroundColor = "white";
         }
     }
+
+    if (document.getElementById("Age").value == "") {
+        document.getElementById("Age").style.backgroundColor = "#FFCCCB";
+    } else {
+        document.getElementById("Age").style.backgroundColor = "white";
+    }
+
+    if (document.getElementById("HeightFt").value == "") {
+        document.getElementById("HeightFt").style.backgroundColor = "#FFCCCB";
+    } else {
+        document.getElementById("HeightFt").style.backgroundColor = "white";
+    }
+
+    if (document.getElementById("HeightIn").value == "") {
+        document.getElementById("HeightIn").style.backgroundColor = "#FFCCCB";
+    } else {
+        document.getElementById("HeightIn").style.backgroundColor = "white";
+    }
+
+
 
 
 }
