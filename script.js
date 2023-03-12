@@ -58,20 +58,56 @@ async function sendData() {
     const response = await fetch(calcURL, data);
     const res = await response.json();
     console.log(res);
-    alert(res.risk);
     document.querySelector('#result').innerHTML = 'Result: ' + res.risk;
 
     if (res.risk == "Error: Cannot Calculate Risk") {
-        document.getElementById("resultBox").style.backgroundColor = "red";
+        document.getElementById("resultBox").style.backgroundColor = "#FFCCCB";
     } else if (res.risk == "uninsurable") {
-        document.getElementById("resultBox").style.backgroundColor = "red";
+        document.getElementById("resultBox").style.backgroundColor = "#FFCCCB";
     } else if (res.risk == "high risk") {
-        document.getElementById("resultBox").style.backgroundColor = "orange";
+        document.getElementById("resultBox").style.backgroundColor = "FFD580";
     }else if (res.risk == "moderate risk") {
-        document.getElementById("resultBox").style.backgroundColor = "yellow";
+        document.getElementById("resultBox").style.backgroundColor = "#FFF9A6";
     } else if (res.risk == "low risk") {
         document.getElementById("resultBox").style.backgroundColor = "#90EE90";
     }
+
+    if (document.getElementById("metOne").checked == true) {
+        let cm = document.getElementById("HeightFt").value;
+        if ((cm > 304.8) || (cm < 0)) {
+            document.getElementById("HeightFt").style.backgroundColor = "#FFCCCB";
+        } else {
+            document.getElementById("HeightFt").style.backgroundColor = "white";
+        }
+    }
+    else{
+        let feet = document.getElementById("HeightFt").value;
+        let inches = document.getElementById("HeightIn").value;
+        let totalInches = (feet * 12) + parseInt(inches);
+        if ((totalInches > 120)|| (totalInches < 0)) {
+            document.getElementById("HeightFt").style.backgroundColor = "#FFCCCB";
+            document.getElementById("HeightIn").style.backgroundColor = "#FFCCCB";
+        } else {
+            document.getElementById("HeightFt").style.backgroundColor = "white";
+            document.getElementById("HeightIn").style.backgroundColor = "white";
+        }
+    }
+
+    if (document.getElementById("metTwo").checked == true){
+        if ((document.getElementById("Weight").value > 142.882) || (document.getElementById("Weight").value < 0)) {
+            document.getElementById("Weight").style.backgroundColor = "#FFCCCB";
+        } else {
+            document.getElementById("Weight").style.backgroundColor = "white";
+        }
+    }
+    else{
+        if ((document.getElementById("Weight").value > 315) || (document.getElementById("Weight").value < 0)) {
+            document.getElementById("Weight").style.backgroundColor = "#FFCCCB";
+        } else {
+            document.getElementById("Weight").style.backgroundColor = "white";
+        }
+    }
+
 
 }
 
